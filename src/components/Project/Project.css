@@ -1,0 +1,214 @@
+#projects {
+    margin-bottom: 4rem;
+}
+
+.projects_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem 4rem;
+}
+
+.project_section {
+    width: calc(50% - 2rem);
+    aspect-ratio: 2/1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.2), inset -20px -20px 25px rgba(0, 0, 0, 0.2),
+        20px 25px 20px rgba(0, 0, 0, 0.2), 20px 30px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project_section-left {
+    flex: 0.45;
+}
+
+.project_intro {
+    border-left: 6px solid;
+    border-color: var(--color-project);
+    padding-left: 1rem;
+}
+
+.project_intro h3 {
+    font-size: 2rem;
+    color: var(--color-project);
+}
+
+.project_intro span {
+    font-size: 1.4rem;
+    color: var(--color-text);
+}
+
+.project_tech {
+    margin-top: 2rem;
+}
+
+.project_tech span {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--color-project);
+    color: #acacac;
+    border-radius: 20px;
+    padding: 2px 4px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.project_info {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project_info span {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    background: linear-gradient(135deg, var(--color-project), #fff, var(--color-project));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200%;
+    animation: anim-flipX 1s ease infinite;
+}
+
+@keyframes anim-flipX {
+    0% {
+        opacity: 0;
+        transform: rotateX(90deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotateX(720deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(720deg);
+    }
+}
+
+.project_button {
+    margin: 2rem 0 0 1.7rem;
+}
+
+.project_section-right {
+    flex: 0.55;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.project_card-wrap {
+    position: relative;
+    width: 80%;
+    height: 60%;
+    background: linear-gradient(180deg, var(--color-project), #acacac);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.project_card {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    filter: brightness(120%);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.project_card-inner.active {
+    transform: rotateY(180deg);
+}
+
+.project_card-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 0.2s ease-in-out;
+}
+
+.project_card-front {
+    position: absolute;
+    background: blue;
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.project_card-front img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project_card-back {
+    position: absolute;
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, var(--color-project), #acacac);
+    transform: rotateY(180deg);
+    color: black;
+    /* text-shadow     : 1px 1px 5px #333; */
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project_card-back span {
+    color: #1c1c1c;
+    font-size: 1.1rem;
+}
+
+/* responsive */
+@media screen and (max-width: 1024px) {
+    .project_intro h3 {
+        font-size: 1.8rem;
+    }
+
+    .project_intro span {
+        font-size: 1.2rem;
+    }
+
+    .project_tech span {
+        font-size: 1rem;
+    }
+
+    .project_info {
+        font-size: 1rem;
+    }
+
+    .project_info span {
+        font-size: 1.2rem;
+    }
+
+    .project_card-back span {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .project_section {
+        width: 100%;
+    }
+
+    .project_card-back span {
+        font-size: 0.9rem;
+    }
+}

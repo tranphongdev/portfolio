@@ -1,0 +1,8 @@
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.about_content {
+    margin-bottom: 20px;
+}

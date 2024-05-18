@@ -1,0 +1,256 @@
+.contact_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    gap: 5rem;
+}
+
+.contact_container-left {
+    flex: 1;
+    width: 50%;
+    aspect-ratio: 1;
+}
+
+input,
+button,
+textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_drop {
+    position: relative;
+    width: 100%;
+    padding: 4rem;
+    aspect-ratio: 1;
+    background-color: rgba(43, 149, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: all 0.5s;
+    border-radius: 44% 56% 44% 56% / 47% 40% 60% 53%;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.3), inset -20px -20px 25px rgba(0, 0, 0, 0.3),
+        20px 25px 20px rgba(0, 0, 0, 0.3), 20px 30px 30px rgba(0, 0, 0, 0.3);
+}
+
+.main_drop:hover {
+    border-radius: 50%;
+}
+
+.main_drop::before {
+    content: '';
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.4;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    transition: all 0.6s ease-in-out;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.main_drop:hover::before {
+    top: 11%;
+    left: 26%;
+}
+
+.main_drop::after {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #dddddd;
+    opacity: 0.4;
+    position: absolute;
+    top: 15%;
+    left: 32%;
+    transition: all 0.6s ease-out;
+}
+
+.main_drop:hover::after {
+    top: 15%;
+    left: 33%;
+}
+
+.main_drop input,
+textarea {
+    width: 80%;
+    padding: 1.2rem;
+    resize: none;
+    color: var(--color-text);
+    background-color: transparent;
+    border-radius: 30px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.2), inset -20px -20px 25px rgba(0, 0, 0, 0.2),
+        20px 25px 20px rgba(0, 0, 0, 0.2), 20px 30px 30px rgba(0, 0, 0, 0.2);
+}
+
+.main_drop textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.main_drop button,
+.sub_drop a {
+    display: block;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: var(--color-primary);
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 20px 20px 20px rgba(255, 255, 255, 0.2), inset -20px -20px 25px rgba(255, 255, 255, 0.2),
+        10px 10px 10px rgba(255, 255, 255, 0.2), 10px 10px 20px rgba(255, 255, 255, 0.2), 2px 2px 0px black;
+    transition: all 0.1s;
+}
+
+.sub_drop a {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.main_drop a:active {
+    transform: translateY(2px);
+    box-shadow: inset 20px 20px 20px rgba(255, 255, 255, 0.2), inset -20px -20px 25px rgba(255, 255, 255, 0.2),
+        10px 10px 10px rgba(255, 255, 255, 0.2), 10px 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.contact_container-right {
+    flex: 1;
+    width: 50%;
+}
+
+.sub_drop {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    aspect-ratio: 1;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.3), inset -20px -20px 25px rgba(0, 0, 0, 0.3),
+        20px 25px 20px rgba(0, 0, 0, 0.3), 20px 30px 30px rgba(0, 0, 0, 0.3);
+    gap: 1rem;
+}
+
+.sub_drop:first-child {
+    background-color: rgba(29, 199, 255, 0.1);
+    border-radius: 54% 46% 44% 56% / 47% 59% 41% 53%;
+    margin: 0 0 2rem 8rem;
+    transition: all 0.6s ease-out;
+}
+
+.sub_drop:first-child:hover,
+.sub_drop:nth-child(2):hover {
+    border-radius: 50%;
+}
+
+.sub_drop:nth-child(2) {
+    border-radius: 65% 35% 40% 60% / 56% 55% 45% 44%;
+    transition: all 0.4s ease-out;
+    background-color: rgba(255, 41, 187, 0.1);
+}
+
+.sub_drop:first-child::before,
+.sub_drop:first-child::after,
+.sub_drop:nth-child(2)::before,
+.sub_drop:nth-child(2)::after {
+    content: '';
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.1;
+    position: absolute;
+    transition: all 0.6s ease-in-out;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sub_drop:first-child::before {
+    width: 2rem;
+    height: 2rem;
+    top: 10%;
+    right: 25%;
+    transition: all 0.5s ease-in-out;
+}
+
+.sub_drop:first-child:hover::before {
+    top: 10%;
+    right: 23%;
+}
+
+.sub_drop:first-child::after {
+    width: 0.5rem;
+    height: 0.5rem;
+    top: 20%;
+    right: 25%;
+}
+
+.sub_drop:nth-child(2)::before {
+    width: 1rem;
+    height: 1rem;
+    bottom: 10%;
+    right: 25%;
+    transition: all 0.5s ease-in-out;
+}
+
+.sub_drop:nth-child(2):hover::before {
+    bottom: 11%;
+    right: 24%;
+}
+
+.sub_drop a {
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.3), inset -20px -20px 25px rgba(0, 0, 0, 0.3);
+}
+
+.sub_drop svg {
+    color: var(--color-primary);
+    font-size: 2rem;
+}
+
+.sub_drop span:nth-child(2) {
+    color: var(--color-primary);
+    font-size: 1.8rem;
+}
+
+/* responsive */
+@media screen and (max-width: 1024px) {
+    .contact_container {
+        padding: 3rem;
+    }
+
+    .main_drop {
+        gap: 1rem;
+    }
+    .main_drop input,
+    textarea {
+        padding: 1rem;
+    }
+    .main_drop button,
+    .sub_drop a {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 740px) {
+    .contact_container {
+        flex-direction: column;
+    }
+    .contact_container-left {
+        width: 70%;
+    }
+    .contact_container-right {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        width: 70%;
+        justify-content: center;
+    }
+    .sub_drop:first-child {
+        margin: unset;
+    }
+    .sub_drop:nth-child(2) {
+        margin: unset;
+    }
+}
