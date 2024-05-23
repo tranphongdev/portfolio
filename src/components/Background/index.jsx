@@ -1,5 +1,3 @@
-import React from 'react';
-
 import './Background.css';
 import background1 from '../../assets/background.jpg';
 

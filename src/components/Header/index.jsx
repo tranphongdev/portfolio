@@ -84,7 +84,7 @@ function Header() {
                     <img src={avatar}></img>
                 </div>
                 <div className="header_info-button">
-                    <Button btnStyle="outline" btnText="Download CV" btnLink={CV} download />
+                    {/* <Button btnStyle="outline" btnText="Download CV" btnLink={CV} download /> */}
                     <Button btnStyle="primary" btnText="Let' Talk" btnLink="#contact" />
                 </div>
             </div>

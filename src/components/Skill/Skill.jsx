@@ -8,7 +8,7 @@ import { AiOutlineHtml5, AiFillGithub } from 'react-icons/ai';
 import { DiCss3 } from 'react-icons/di';
 import { SiJavascript } from 'react-icons/si';
 import { RiReactjsFill, RiTailwindCssFill } from 'react-icons/ri';
-import { TbBrandRedux, TbBrandTypescript, TbBrandVscode } from 'react-icons/tb';
+import { TbBrandRedux, TbBrandVscode } from 'react-icons/tb';
 import { FaPython } from 'react-icons/fa';
 
 const skills = ['html', 'css', 'javascript', 'reactjs', 'github', 'vscode', 'redux', 'python', 'TailwindCss'];

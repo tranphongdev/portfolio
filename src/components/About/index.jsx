@@ -33,8 +33,8 @@ function About() {
                     <span>Birthday:</span> 04/07/2002. <br />
                     <span>Address:</span> Thi Tran Goi - Vu Ban - Nam Dinh <br />
                     <br />
-                    I'm a 4th year student majoring in Information Technology at KINH TE KY THUAT CONG NGHIEP NAM DINH
-                    University.
+                    I'm a 4th year student majoring in Information Technology at University of Economics - Technology
+                    for Industries (UNETI)
                     <br />
                     <br />
                     I'm a SELF-TAUGHT front end developer looking for an entry-level position. Desire to learn and
