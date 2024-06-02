@@ -2,8 +2,10 @@ import React, { useRef, useEffect, useContext, useState } from 'react';
 import { topContext } from '../../App';
 import './Project.css';
 import { projects } from '../../constants';
-import Button from '../Button';
+// import Button from '../Button';
 import { BsDot } from 'react-icons/bs';
+
+const Button = React.lazy(() => import('../Button'));
 
 function Project() {
     const [activeCard, setActiveCard] = useState('');
