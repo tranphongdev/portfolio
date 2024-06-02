@@ -1,18 +1,18 @@
-import { createContext, useState } from 'react';
+import React, { Suspense, createContext, useState } from 'react';
 import { ToastContainer } from 'react-toastify';
 
 import './index.css';
 import 'react-toastify/dist/ReactToastify.css';
 
-import Background from './components/Background';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Skill from './components/Skill/Skill';
-import Project from './components/Project';
-import Experience from './components/Experience';
+const Background = React.lazy(() => import('./components/Background'));
+const Header = React.lazy(() => import('./components/Header'));
+const Navbar = React.lazy(() => import('./components/Navbar'));
+const About = React.lazy(() => import('./components/About'));
+const Contact = React.lazy(() => import('./components/Contact'));
+const Footer = React.lazy(() => import('./components/Footer'));
+const Project = React.lazy(() => import('./components/Project'));
+const Skill = React.lazy(() => import('./components/Skill/Skill'));
+const Experience = React.lazy(() => import('./components/Experience'));
 
 export const topContext = createContext();
 
@@ -25,17 +25,25 @@ function App() {
     ]);
     return (
         <topContext.Provider value={[componentTop, setComponentTop]}>
-            <div className="App">
-                <Background />
-                <Header />
-                <Navbar result={componentTop} />
-                <About />
-                <Experience />
-                <Project />
-                <Skill />
-                <Contact />
-                <Footer />
-            </div>
+            <Suspense
+                fallback={
+                    <div className="loading">
+                        <span className="loader"></span>
+                    </div>
+                }
+            >
+                <div className="App">
+                    <Background />
+                    <Header />
+                    <Navbar result={componentTop} />
+                    <About />
+                    <Experience />
+                    <Project />
+                    <Skill />
+                    <Contact />
+                    <Footer />
+                </div>
+            </Suspense>
 
             <ToastContainer
                 position="top-right"

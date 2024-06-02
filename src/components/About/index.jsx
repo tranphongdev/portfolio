@@ -29,9 +29,9 @@ function About() {
                 <p>
                     <span>Welcome to visit my personal Website!</span>
                     <br /> <br />
-                    <span>Name:</span> TRẦN ĐÌNH PHONG. <br />
+                    <span>Name:</span> TRAN DINH PHONG. <br />
                     <span>Birthday:</span> 04/07/2002. <br />
-                    <span>Address:</span> Thi Tran Goi - Vu Ban - Nam Dinh <br />
+                    <span>Address:</span> Vu Ban - Nam Dinh <br />
                     <br />
                     I'm a 4th year student majoring in Information Technology at University of Economics - Technology
                     for Industries (UNETI)
