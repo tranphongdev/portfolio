@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaLinkedin } from 'react-icons/fa';
 
 import './Header.css';
 import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri';
@@ -7,7 +8,7 @@ import Button from '../Button';
 import avatar from '../../assets/avt.jpg';
 import CV from '../../assets/cv.pdf';
 import logo from '../../assets/logo.png';
-import { AiFillGithub, AiFillInstagram } from 'react-icons/ai';
+import { AiFillGithub } from 'react-icons/ai';
 import { BsFacebook } from 'react-icons/bs';
 import { GiHorseHead } from 'react-icons/gi';
 import { FaHorse } from 'react-icons/fa';
@@ -85,7 +86,7 @@ function Header() {
                 </div>
                 <div className="header_info-button">
                     {/* <Button btnStyle="outline" btnText="Download CV" btnLink={CV} download /> */}
-                    <Button btnStyle="primary" btnText="Let' Talk" btnLink="#contact" />
+                    <Button btnStyle="primary" btnText="Contact" btnLink="#contact" />
                 </div>
             </div>
 
@@ -94,13 +95,13 @@ function Header() {
             </div>
 
             <div className="header_socials">
-                <a href="#" target="_blank">
-                    <AiFillInstagram />
+                <a href="https://www.linkedin.com/in/tranphongdev/" target="_blank">
+                    <FaLinkedin />
                 </a>
-                <a href="https://www.facebook.com/khanhphong47/" target="_blank">
+                <a href="https://www.facebook.com/tranphong0407/" target="_blank">
                     <BsFacebook />
                 </a>
-                <a href="https://github.com/dinhphong02" target="_blank">
+                <a href="https://github.com/tranphongdev" target="_blank">
                     <AiFillGithub />
                 </a>
                 <div></div>

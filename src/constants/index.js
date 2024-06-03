@@ -1,11 +1,21 @@
-import ercomerce from '../assets/project/pj1.jpg';
-import prj1 from '../assets/project/prj2.jpg';
 import trello from '../assets/project/pt3.jpg';
+import tdpshop from '../assets/project/prj.jpg';
+import portfolio from '../assets/project/portfolio.jpg';
 
 export const projects = [
     {
-        src: prj1,
-        name: 'FE-Shopify',
+        src: portfolio,
+        name: 'My Portfolio',
+        type: 'My Personal Website',
+        desc: ['Welcome to my personal website!'],
+        technology: ['ReactJs', 'React Hook', 'Javascript', 'HTML', 'CSS', 'EmailJs'],
+        preview: 'https://cv-tranphongdev.vercel.app/',
+        srcCode: '#',
+        color: '#00a8ff',
+    },
+    {
+        src: tdpshop,
+        name: 'TPD Shop',
         type: 'Website Ecomerce ',
         desc: [
             'Welcome to my website ercomerce!',
@@ -13,9 +23,9 @@ export const projects = [
             'API Calls to Display Products, Add/Remove from Cart and Wislist, Filter Products by price, Detail product, and Login',
         ],
         technology: ['ReactJs', 'React Hook', 'Redux', 'Javascript', 'HTML', 'CSS', 'Tailwindcss'],
-        preview: 'https://fe-shopify.vercel.app/',
+        preview: 'https://tpdshop.vercel.app/',
         srcCode: '#',
-        color: '#ff7506',
+        color: '#0984e3',
     },
     {
         src: trello,
@@ -26,19 +36,5 @@ export const projects = [
         preview: 'https://trello-app-coral-six.vercel.app/',
         srcCode: '#',
         color: '#4f75ff',
-    },
-    {
-        src: ercomerce,
-        name: 'Phong Shop',
-        type: 'Website Ecomerce ',
-        desc: [
-            'Welcome to my website ercomerce!',
-            'Website offers the following main features:',
-            'API Calls to Display Products, Add/Remove from Cart and Wislist, Filter Products by price, Detail product, and Login',
-        ],
-        technology: ['ReactJs', 'React Hook', 'Redux', 'Javascript', 'HTML', 'CSS', 'Tailwindcss'],
-        preview: 'https://tdpshop.vercel.app/',
-        srcCode: '#',
-        color: '#00ccff',
     },
 ];

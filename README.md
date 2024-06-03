@@ -1,8 +1,27 @@
-# React + Vite
+## Getting Started
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+First, run the development server:
 
-Currently, two official plugins are available:
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Open [http://localhost:5173/](http://localhost:5173/) with your browser to see the result.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Learn More
+
+To learn more about ReactJs, take a look at the following resources:
+
+-   [Learn ReactJs](https://react.dev/learn) - an interactive ReactJs tutorial.
+
+You can check out [the ReactJs GitHub repository](https://github.com/facebook/react) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of ReactJs.
