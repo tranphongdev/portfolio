@@ -6,6 +6,7 @@ import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri';
 
 import Button from '../Button';
 import avatar from '../../assets/avt.jpg';
+import avt from '../../assets/bg-black.png';
 import CV from '../../assets/cv.pdf';
 import logo from '../../assets/logo.png';
 import { AiFillGithub } from 'react-icons/ai';
@@ -82,7 +83,7 @@ function Header() {
 
             <div className="header_info">
                 <div className="header_info-avatar">
-                    <img src={avatar}></img>
+                    <img src={avt}></img>
                 </div>
                 <div className="header_info-button">
                     {/* <Button btnStyle="outline" btnText="Download CV" btnLink={CV} download /> */}
